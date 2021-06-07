@@ -52,7 +52,10 @@ async def on_guild_join(guild): #To block guilds from joining
 
 server = FifiServer(bot)
 
-bot.load_extension('cogs.music')
+extensions = [
+    'cogs.music',
+    'cogs.owner'
+]
 
 server.start()
 
