@@ -17,14 +17,14 @@ async def on_ready():
 
 @bot.event
 async def on_guild_join(guild): #To block guilds from joining
-  for channel in guild.text_channels:
-    try:
-      await channel.send("Sorry, this server is not whitelisted.")
-      break
-    except:
-      pass
+    for channel in guild.text_channels:
+        try:
+            await channel.send("Sorry, this server is not whitelisted.")
+            break
+        except:
+            pass
 
-  await guild.leave()
+    await guild.leave()
 
 server = FifiServer(bot)
 
