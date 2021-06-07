@@ -57,6 +57,6 @@ extensions = [
     'cogs.owner'
 ]
 
-server.start()
+#server.start()
 
 bot.run(TOKEN)
